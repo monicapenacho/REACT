@@ -1,3 +1,10 @@
+Crear un juego de Tres en línea que:
+
+Te permite jugar Tres en línea,
+Indica cuando un jugador ha ganado el juego,
+Almacena el historial de un juego a medida que avanza un juego,
+Permite a los jugadores revisar el historial de un juego y ver versiones anteriores del tablero de un juego.
+
 1.- crear proyecto:
 npx create-react-app nombreproyecto,
 2.- entrar en el proyecto con:
@@ -26,6 +33,7 @@ import
 8.2 Matriz History: almacén matrices squares = historial juego
 8.3 Componente Game: padre de Board
 9.- Mostrar los movimientos anteriores con botones
+10.-Limpieza de movimientos redundantes
 
 React DevTools
 Para el desarrollo local, React DevTools está disponible como Chrome, Firefox, y Edge extensión del navegador. Después de instalarlo, la pestaña Componentes aparecerá en las Herramientas de desarrollo de tu navegador para los sitios que utilizan React.
@@ -40,3 +48,11 @@ Y así es como se vería si cambiaras los datos sin mutar de la matriz squares:
 // Ahora `squares` no ha cambiado, pero el primer elemento de `nextSquares` es 'X' en lugar de `null`
 
 Importancia de la inmutabilidad 1) la habilidad de deshacer y rehacer ciertas acciones es un requisito común para las aplicaciones. 2) La inmutabilidad hace que sea muy barato para los componentes comparar si sus datos han cambiado o no. Puedes obtener más información sobre cómo React elige cuándo volver a renderizar un componente en la documentación de referencia de la API memo.
+
+Si tienes tiempo extra o quieres practicar tus nuevas habilidades de React, aquí hay algunas ideas de mejoras que podría hacer al juego de tres en línea, enumeradas en orden de dificultad creciente:
+
+Solo para el movimiento actual, muestra «Estás en el movimiento #…» en lugar de un botón
+Vuelve a escribir Board para usar dos bucles para crear los cuadrados en lugar de codificarlos.
+Agrega un botón de alternancia que te permita ordenar los movimientos en orden ascendente o descendente.
+Cuando alguien gane, resalta los tres cuadrados que causaron la victoria (y cuando nadie gane, muestra un mensaje indicando que el resultado fue un empate).
+Muestra la ubicación de cada movimiento en el formato (columna, fila) en la lista del historial de movimientos.
