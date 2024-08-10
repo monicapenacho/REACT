@@ -25,6 +25,7 @@ import
 8.1 Slice: copia matriz inmutable
 8.2 Matriz History: almacén matrices squares = historial juego
 8.3 Componente Game: padre de Board
+9.- Mostrar los movimientos anteriores con botones
 
 React DevTools
 Para el desarrollo local, React DevTools está disponible como Chrome, Firefox, y Edge extensión del navegador. Después de instalarlo, la pestaña Componentes aparecerá en las Herramientas de desarrollo de tu navegador para los sitios que utilizan React.

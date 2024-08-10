@@ -5,7 +5,7 @@
 // el mejor enfoque es almacenar el estado del juego en el componente Board principal en lugar de en cada Square. El componente Board puede decirle a cada Square qué mostrar al pasar una prop, como lo hizo cuando pasó un número a cada Cuadrado.
 
 // Para recopilar datos de varios elementos secundarios o para que dos componentes secundarios se comuniquen entre sí, declara el estado compartido en tu componente principal. El componente padre puede devolver ese estado a los hijos a través de props. Esto mantiene los componentes secundarios sincronizados entre sí y con el componente principal.
-import { useState } from "react";
+
 import SquareEstado from "./SquareEstado";
 import CalculateWinner from "./CalculateWinner";
 
