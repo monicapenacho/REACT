@@ -2,15 +2,14 @@
 
 import logo from './logo.svg';
 import './App.css';
-import BoardEstadoTurnosVacioWinner from './componentes/BoardEstadoTurnosVacioWinner';
 
-
+import Game from './componentes/Game';
 
 
 function App() {
   return (
     <>
-     <BoardEstadoTurnosVacioWinner classname="board-row" classtext="square"/>
+     <Game/>
 
     </>
   );

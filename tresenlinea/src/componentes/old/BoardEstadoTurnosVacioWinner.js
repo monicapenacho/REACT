@@ -6,8 +6,8 @@
 
 // Para recopilar datos de varios elementos secundarios o para que dos componentes secundarios se comuniquen entre sí, declara el estado compartido en tu componente principal. El componente padre puede devolver ese estado a los hijos a través de props. Esto mantiene los componentes secundarios sincronizados entre sí y con el componente principal.
 import { useState } from "react";
-import SquareEstado from "./SquareEstado";
-import CalculateWinner from "./CalculateWinner";
+import SquareEstado from "../SquareEstado";
+import CalculateWinner from "../CalculateWinner";
 
 export default function BoardEstadoTurnosVacioWinner({classname, classtext}) {
 

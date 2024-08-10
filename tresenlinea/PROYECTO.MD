@@ -21,6 +21,11 @@ export default
 7.- importar componentes en app.js:
 import
 
+8.- Almacenar un historial de movimientos
+8.1 Slice: copia matriz inmutable
+8.2 Matriz History: almacén matrices squares = historial juego
+8.3 Componente Game: padre de Board
+
 React DevTools
 Para el desarrollo local, React DevTools está disponible como Chrome, Firefox, y Edge extensión del navegador. Después de instalarlo, la pestaña Componentes aparecerá en las Herramientas de desarrollo de tu navegador para los sitios que utilizan React.
 El atributo onClick del elemento DOM <button> tiene un significado especial para React porque es un componente integrado. Para componentes personalizados como Square, el nombre depende de ti. Podrías dar cualquier nombre a la prop onSquareClick de Square o handleClick de Board, y el código funcionaría de la misma manera. En React, es convencional usar nombres on[Event] para props que representan eventos y handle[Event] para las definiciones de funciones que controlan los eventos.
