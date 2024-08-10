@@ -1,10 +1,10 @@
 
 import Square from "./Square"
-export default function Board() {
+export default function Board({classtext}) {
     return (
         // SON NECESARIOS PORQUE HAY VARIOS DIV
         <>  
-        <div className="board-row">
+        <div className={classtext}>
         </div>
         </>
     )

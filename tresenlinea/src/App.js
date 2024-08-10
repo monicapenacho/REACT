@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Board from './componentes/Board';
 import Square from './componentes/Square';
+import HandleClick from './componentes/HandleClick ';
+import OnClick from './componentes/OnClick';
 
 function App() {
   return (
     // <div className="App">
     <>
-      <Board/> <Square value = "1" /> <Square value = "2"/> <Square value = "3"/>
+      {/* <Board/> <Square value = "1" /> <Square value = "2"/> <Square value = "3"/> */}
+      <Board classtext="board-row"/> <OnClick classtext="square" value = "1"/> <OnClick classtext="square" value = "2"/> <OnClick classtext="square" value = "3"/>
       <Board/> <Square value = "4"/> <Square value = "5"/> <Square value = "6"/>
       <Board/> <Square value = "7"/> <Square value = "8"/> <Square value = "9"/>
     </>

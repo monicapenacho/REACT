@@ -1,3 +1,3 @@
-export default function handleClick() {
+export default function HandleClick() {
     console.log('¡hiciste clic!');
   }
