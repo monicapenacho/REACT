@@ -2,17 +2,14 @@
 
 import logo from './logo.svg';
 import './App.css';
-import BoardUseState from './componentes/BoardUseState';
-import MyUseState from './componentes/MyUseState';
+import BoardEstado from './componentes/BoardEstado';
+
 
 
 function App() {
   return (
-
     <>
-      <BoardUseState classtext="board-row"> <MyUseState/><MyUseState/><MyUseState/></BoardUseState>
-      <BoardUseState classtext="board-row"> <MyUseState/><MyUseState/><MyUseState/></BoardUseState>
-      <BoardUseState classtext="board-row"> <MyUseState/><MyUseState/><MyUseState/></BoardUseState>
+     <BoardEstado classname="board-row" classtext="square"/>
     </>
   );
 }
@@ -52,3 +49,8 @@ export default App;
 // }
 
 // export default App;
+
+// PAS0 4
+// <BoardUseState classtext="board-row"> <MyUseState/><MyUseState/><MyUseState/></BoardUseState>
+// <BoardUseState classtext="board-row"> <MyUseState/><MyUseState/><MyUseState/></BoardUseState>
+// <BoardUseState classtext="board-row"> <MyUseState/><MyUseState/><MyUseState/></BoardUseState>
