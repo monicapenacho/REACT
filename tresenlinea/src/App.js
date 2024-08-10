@@ -2,14 +2,14 @@
 
 import logo from './logo.svg';
 import './App.css';
-import BoardEstadoTurnos from './componentes/BoardEstadoTurnos';
+import BoardEstadoTurnosVacio from './componentes/BoardEstadoTurnosVacio';
 
 
 
 function App() {
   return (
     <>
-     <BoardEstadoTurnos classname="board-row" classtext="square"/>
+     <BoardEstadoTurnosVacio classname="board-row" classtext="square"/>
     </>
   );
 }

@@ -12,6 +12,8 @@ npm start
 5.3 componente interactivo: Botón
 5.4 componente interactivo: Use State (redodar) Set Value
 5.5 manejo de estado en el componente Board, el componente padre Board pasa props a los componentes hijos Square para que puedan mostrarse correctamente.
+5.6 control Turnos x vs o
+5.7 control Vacio Verifica si el cuadrado ya tiene una X o una O. Si el cuadrado ya está lleno, genera un return en la función handleClick, antes de que intente actualizar el estado del tablero.
 6.-exportar componentes:
 export default
 7.- importar componentes en app.js:
