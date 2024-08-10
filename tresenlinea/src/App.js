@@ -3,13 +3,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-import GameMap from './componentes/GameMap';
+import GameMapJumpTo from './componentes/GameMapJumpTo';
 
 
 function App() {
   return (
     <>
-     <GameMap/>
+     <GameMapJumpTo/>
 
     </>
   );
