@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Input from "./Input";
+import Button from "./Button";
+import Titulo from "./Titulo";
 
 
 export default function TodoList() {
@@ -36,24 +38,24 @@ export default function TodoList() {
 
     return (
         <div>
-        <h1>Lista de Tareas</h1>
+            <Titulo texto="Lista de Tareas"/>
 
-        {/* Campo entrada */}
-        <input tipo="text" valor="inputValue" onChange={handleInputChange} texto="Escribe una nueva tarea"/>
-        {/* botón para agregar nuevas tareas */}
-        {/* <button boton=handleAddTask} text="Agregar tarea"/> */}
-        <button onClick={handleAddTask}>Agregar tarea</button>  
-        {/* botón para eliminar la última tarea  */}
-        <button onClick={handleRemoveLastTask}>Eliminar última tarea</button>
-        <ul>
-            {tasks.map((task, index) => (
-            <li key={index}>
-                {task}
-                {/* botón para eliminar tarea seleccionada */}
-                <button onClick={() => handleRemoveTask(index)}>Eliminar</button>
-            </li>
-            ))}
-        </ul>
+            {/* Campo entrada */}
+            <Input tipo="text" valor={inputValue} cambio={handleInputChange} texto="Escribe una nueva tarea"/>
+            {/* botón para agregar nuevas tareas */}
+            <Button accion={handleAddTask} texto="Agregar tarea" />
+            {/* botón para eliminar la última tarea  */}
+            <Button accion={handleRemoveLastTask} texto="Eliminar última tarea" />
+            <ul>
+                {tasks.map((task, index) => (
+                <li key={index}>
+                    {task}
+                    {/* botón para eliminar tarea seleccionada */}
+                    <Button accion={() => handleRemoveTask(index)} texto="Eliminar"/>
+                
+                </li>
+                ))}
+            </ul>
         </div>
     );
 }

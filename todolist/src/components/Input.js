@@ -1,10 +1,10 @@
  // Campo entrada 
-export default function Input({ tipo, valor, onChange, texto}) {
+export default function Input({ tipo, valor, cambio, texto}) {
     return (
         <input
             type={tipo}
             value={valor || ""}
-            onChange={onChange}
+            onChange={cambio}
             placeholder={texto}
         />
     );
