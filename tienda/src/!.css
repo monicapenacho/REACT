@@ -129,6 +129,7 @@ body {
     margin: 0; /* Quita el margen predeterminado */
     font-family: 'Arial', sans-serif; /* Tipografía del título carrito */
   }
+
   
   /* Responsive: Ajusta el tamaño del texto en pantallas pequeñas */
   /* @media (max-width: 576px) {
@@ -168,3 +169,6 @@ body {
   <Link to="/" className="navbarlink">Inicio</Link>
   creada nueva
   <div className="navbarli">
+
+    {/* <h2>Carrito</h2> */}
+    <h3>Carrito</h3>

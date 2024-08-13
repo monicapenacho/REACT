@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "../App.css"; // Importa el archivo CSS para los estilos
 import Product from "../componentes/Product";
-
+import CalculateTotal from "../componentes/CalculateTotal";
+// fUENTE internet: Importa el icono de carrito de React Icons
+// import { FaShoppingCart } from "react-icons/fa"; 
 
 
 // Componente principal que maneja la lista de productos y el carrito
@@ -20,6 +22,9 @@ export default function ProductList() {
     setCart([...cart, product]);
   };
 
+ 
+
+
   return (
     <div className="catalogo">
       <h1>Catálogo de Productos</h1>
@@ -30,13 +35,18 @@ export default function ProductList() {
       </div>
       <div className="cart">
         {/* <h2>Carrito</h2> */}
-        <h2 className="carrito">Carrito</h2>
+        <h2 className="carrito">
+            Carrito
+            {/* Fuente Internet: icono de carrito */}
+           {/* <FaShoppingCart />  */}
+        </h2>
         <ul>
           {cart.map((item, index) => (
             <li key={index}>{item.name} - {item.price}</li>
           ))}
         </ul>
       </div>
+      <CalculateTotal cart={cart}/>
     </div>
   );
 }
