@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Footer from './componentes/Footer';
 import NavBar from './componentes/NavBar.js';
 import Header from './componentes/Header';
+import NewUserForm from './pages/NewUserForm.js';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<ProductList />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/user" element={<NewUserForm />} />
       </Routes>
       <Footer />
     </Router>
