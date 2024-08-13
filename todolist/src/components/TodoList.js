@@ -41,7 +41,7 @@ export default function TodoList() {
             <Titulo texto="Lista de Tareas"/>
 
             {/* Campo entrada */}
-            <Input tipo="text" valor={inputValue} cambio={handleInputChange} texto="Escribe una nueva tarea"/>
+            <Input tipo="text" cambio={handleInputChange} texto="Escribe una nueva tarea"/>
             {/* botón para agregar nuevas tareas */}
             <Button accion={handleAddTask} texto="Agregar tarea" />
             {/* botón para eliminar la última tarea  */}
