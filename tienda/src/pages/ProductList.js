@@ -9,11 +9,11 @@ export default function ProductList() {
   const [cart, setCart] = useState([]);
 
   const products = [
-    { id: 1, name: "Producto 1", price: "$10", image: "/images/product1.jpg" },
-    { id: 2, name: "Producto 2", price: "$20", image: "/images/product2.jpg" },
-    { id: 3, name: "Producto 3", price: "$30", image: "/images/product3.jpg" },
-    { id: 4, name: "Producto 4", price: "$40", image: "/images/product4.jpg" },
-    { id: 5, name: "Producto 5", price: "$50", image: "/images/product5.jpg" },
+    { id: 1, name: "PerruPelota", price: "$10", image: "/images/product1.jpg" },
+    { id: 2, name: "PerruHueso", price: "$20", image: "/images/product2.jpg" },
+    { id: 3, name: "PerruGranos", price: "$30", image: "/images/product3.jpg" },
+    { id: 4, name: "PerruPincho", price: "$40", image: "/images/product4.jpg" },
+    { id: 5, name: "PerruCuerda", price: "$50", image: "/images/product5.jpg" },
   ];
 
   const handleAddToCart = (product) => {
@@ -21,7 +21,7 @@ export default function ProductList() {
   };
 
   return (
-    <div>
+    <div className="catalogo">
       <h1>Catálogo de Productos</h1>
       <div className="product-list">
         {products.map((product) => (
@@ -29,7 +29,8 @@ export default function ProductList() {
         ))}
       </div>
       <div className="cart">
-        <h2>Carrito</h2>
+        {/* <h2>Carrito</h2> */}
+        <h2 className="carrito">Carrito</h2>
         <ul>
           {cart.map((item, index) => (
             <li key={index}>{item.name} - {item.price}</li>
