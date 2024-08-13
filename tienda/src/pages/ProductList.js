@@ -28,13 +28,14 @@ export default function ProductList() {
           <Product key={product.id} product={product} onAddToCart={handleAddToCart} />
         ))}
       </div>
-
-      <h2>Carrito</h2>
-      <ul>
-        {cart.map((item, index) => (
-          <li key={index}>{item.name} - {item.price}</li>
-        ))}
-      </ul>
+      <div className="cart">
+        <h2>Carrito</h2>
+        <ul>
+          {cart.map((item, index) => (
+            <li key={index}>{item.name} - {item.price}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
