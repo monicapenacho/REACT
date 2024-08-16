@@ -8,6 +8,8 @@ import Footer from './componentes/Footer';
 import NavBar from './componentes/NavBar.js';
 import NewUserForm from './pages/NewUserForm.js';
 import Cabecera from './componentes/Cabecera.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import CarouselInterval from './componentes/CarouselInterval';
 
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
     <Router>
       <Cabecera />
       <NavBar />
+      {/* <div>
+        <CarouselInterval />
+      </div> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

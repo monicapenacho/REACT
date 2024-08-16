@@ -177,7 +177,7 @@ h1 {
   font-family: 'Arial', sans-serif; /* Tipografía del título */
 }
 
-/*Estilo para el titulo carrito*/
+/*Estilo para el titulo carrito, Inicio , Acerca de*/
 h2 {
   font-size: 2rem; /* Tamaño del texto del título carrito */
   font-weight: bold; /* Negrita para el título carrito */
@@ -189,6 +189,7 @@ h2 {
 p {
   color:  #17a2b8;
 }
+
 
 h2.carrito {
   font-size: 2rem; /* Tamaño del texto del título carrito */
@@ -349,21 +350,9 @@ header {
 }
 
 /* Estilo para el título del header y catálogo de productos*/
-h1 {
-  font-size: 2.5rem; /* Tamaño del texto del título */
-  font-weight: bold; /* Negrita para el título */
-  margin: 0; /* Quita el margen predeterminado */
-  font-family: 'Arial', sans-serif; /* Tipografía del título */
-  
-}
-
+/*ver h1, h2 y p arriba*/
 /*Estilo para el titulo carrito*/
-h2 {
-  font-size: 2rem; /* Tamaño del texto del título carrito */
-  font-weight: bold; /* Negrita para el título carrito */
-  margin: 0; /* Quita el margen predeterminado */
-  font-family: 'Arial', sans-serif; /* Tipografía del título carrito */
-}
+
 
 /* Responsive: Ajusta el tamaño del texto en pantallas pequeñas */
 /* @media (max-width: 576px) {
