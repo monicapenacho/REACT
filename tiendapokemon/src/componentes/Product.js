@@ -15,7 +15,7 @@ export default function Product({ product }) {
         <h3>{product.name}</h3>
         <p>Price: {product.price}</p>
         {/* <button className="btn btn-info" onClick={() => onAddToCart(product)}>Añadir al carrito</button> */}
-        <button className="btn btn-info" onClick={() => addToCart(product)}>Añadir al <FaShoppingCart /></button>
+        <button className="btn btn-info añadir" onClick={() => addToCart(product)}>Añadir al <FaShoppingCart /></button>
       </div>
     );
   }

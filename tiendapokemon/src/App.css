@@ -178,9 +178,9 @@ h1 {
 }
 
 /*Estilo para el titulo carrito, Inicio , Acerca de*/
-h2 {
+.title h2 {
   font-size: 2rem; /* Tamaño del texto del título carrito */
-  font-weight: bold; /* Negrita para el título carrito */
+  /* font-weight: bold; Negrita para el título carrito */
   margin: 0; /* Quita el margen predeterminado */
   font-family: 'Arial', sans-serif; /* Tipografía del título carrito */
   color:  #17a2b8;
@@ -375,20 +375,27 @@ header {
 
 /* Estilo para el contenedor de la barra de navegación */
 .navbar {
+  /* display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  /* align-items: center; Centra verticalmente */
+  width: 100%; /*Asegura que el NavBar tome todo el ancho */
   background-color: #17a2b8;
   padding: 0px 20px;
   /* padding: 10px 20px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- 
+  
 }
 
 .navbarli {
   /* Alinear en una fila */
-  display: flex; justify-content: center; align-items: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
   /* Elimina los puntos de la lista */
   list-style-type: none;
   padding: 10px 20px;
-
+  /* centrar contenido*/
+  /* margin: 0 auto; */
 
 }
 
@@ -409,3 +416,47 @@ header {
 .catalogo {
   color:  #17a2b8;
 }
+
+
+
+.carouselContainer {
+  max-height: 300px; /* Ajusta la altura máxima del contenedor */
+  overflow: hidden;  /* Para asegurarnos de que no haya desbordamiento y por tanto de que el contenido no esté siendo ocultado por el carrusel.*/
+  margin-bottom: 1px; /* Añadir margen inferior si es necesario */
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.carouselImage {
+  width: auto;
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  /* height: auto;   Mantiene la proporción de la imagen */
+  height: 200px; /* Fija una altura para todas las imágenes */
+  object-fit: contain; /*Asegura que la imagen se ajuste sin perder la proporción : Esto asegura que la imagen mantenga su proporción original mientr as se ajusta dentro del tamaño especificado. Esto previene que la imagen se deforme. */ 
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: block;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia del texto desde la parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  /*Fondo semitransparente para que el texto sea legible */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.añadir {
+  color: white !important;/* Fuerza el color del texto a blanco */
+  /* background-color: #00c3ff; Asegúrate de que el fondo sea visible */
+  /* border-radius: 10px; Opcional: Para bordes redondeados */
+}
+
+.añadir svg {
+  color: white !important; /* Asegura que el icono también sea blanco */
+}
+
+

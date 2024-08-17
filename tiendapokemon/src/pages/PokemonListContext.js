@@ -11,8 +11,8 @@ export default function PokemonListContext() {
 
   // Función para obtener datos de la PokéAPI
   useEffect(() => {
-      // Obtenemos una lista de los primeros 10 Pokémon
-      fetch(`https://pokeapi.co/api/v2/pokemon?limit=10`)
+      // Obtenemos una lista de los primeros 100 Pokémon
+      fetch(`https://pokeapi.co/api/v2/pokemon?limit=100`)
         .then((response) => response.json())
         .then((data) => {
           const results = data.results;

@@ -11,8 +11,8 @@ import ShoppingCartContext from './pages/ShoppingCartContext.js';
 import PokemonListContext from './pages/PokemonListContext.js';
 import { CartProvider } from './componentes/CartContext';             //Context
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import CarouselInterval from './componentes/CarouselInterval';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CarouselInterval from './componentes/CarouselInterval';
 
 
 function App() {
@@ -21,9 +21,7 @@ function App() {
       <Router>
         <Cabecera />
         <NavBar />
-        {/* <div>
-          <CarouselInterval />
-        </div> */}
+        <CarouselInterval />                  
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
